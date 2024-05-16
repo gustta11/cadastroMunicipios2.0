@@ -29,26 +29,22 @@ const Formulario =  () =>{
         }
     }
     
-    
-
-
-
 
     return(
         <form onSubmit={handleSubmit}>
 
         <label> Nome:</label>
-        <input type="text" placeholder="Digite aqui"/>
+        <input type="text" name='nome' value={handleChange} placeholder="Digite aqui"/>
         <label > CPF:</label>
-        <input type="text"placeholder="Digite aqui" />
+        <input type="text" name='cpf' value={handleChange} placeholder="Digite aqui" />
         <label > IDADE:</label>
-        <input type="text" placeholder="Digite aqui"/>
+        <input type="text" name='idade' value={handleChange} placeholder="Digite aqui"/>
         <label > SEXO:</label>
-        <input type="text" placeholder="Digite aqui"/>
+        <input type="text" name='sexo' value={handleChange}  placeholder="Digite aqui"/>
         <label >BAIRRO:</label>
-        <input type="text" placeholder="Digite aqui" />
+        <input type="text" name='bairro' value={handleChange} placeholder="Digite aqui" />
         <label >CEP:</label>
-        <input type="text"  placeholder="Digite aqui" />
+        <input type="text"  name='cep' value={handleChange} placeholder="Digite aqui" />
         <button type="submit">Cadastrar</button>
 
         </form>
