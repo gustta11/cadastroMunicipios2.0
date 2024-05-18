@@ -59,3 +59,5 @@ const Formulario =  () =>{
         </form>
     )
 }
+
+export default Formulario
