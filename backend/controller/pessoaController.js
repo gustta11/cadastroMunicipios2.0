@@ -14,12 +14,12 @@ export async function createPessoa(req, res){
 }
 
 export async function getAllPessoas(req, res){
-    read((err, pessoas) => {
+    read((err, moradores) => {
         if(err){
             res.status(500).json({error:err.message})
             return
         }
-        res.json(pessoas)
+        res.json(moradores)
     })
 }
 
