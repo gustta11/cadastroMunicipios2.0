@@ -1,7 +1,7 @@
 import express from 'express'
 const app = express()
 import cors from 'cors'
-import {getAllPessoas, createPessoa, updatePessoa, deletePessoa} from './pessoasController.js'
+import {getAllPessoas, createPessoa, updatePessoa, deletePessoa} from './controller/pessoaController.js'
 
 app.use(express.json())
 app.use(cors())

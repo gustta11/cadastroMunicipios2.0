@@ -1,4 +1,4 @@
-import connection from "../config/Conecta";
+import connection from "../config/Conecta.js";
 
 
 export function read(callback){
