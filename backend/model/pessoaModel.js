@@ -2,14 +2,14 @@ import connection from "../config/Conecta.js";
 
 
 export function read(callback){
-    connection.query('SELECT * from pessoas', callback)
+    connection.query('SELECT * from moradores', callback)
 }
-export function create(nome,idade,cpf,sexo,callback){
-    connection.query('INSERT INTO pessoas (nome, idade, cpf, sexo) VALUES(?,?,?,?)', [nome,idade,cpf,sexo], callback)
+export function create(nome,cpf, idade, sexo, bairro, cep, callback){
+    connection.query('INSERT INTO moradores (Nome, Cpf, Idade, Sexo, Bairro, Cep) VALUES(?,?,?,?,?,?)', [nome,cpf,idade,sexo,bairro,cep], callback)
 }
 export function update(id,novoDados, callback){
-    connection.query('UPDATE pessoas set ? where id = ?', [novoDados,id], callback)
+    connection.query('UPDATE moradores set ? where id = ?', [novoDados,id], callback)
 }
 export function deletePes(id, callback){
-    connection.query('UPDATE pessoas set ativo_pessoa = 0 where id = ?', [id], callback)
+    connection.query('UPDATE moradores set ativo_pessoa = 0 where id = ?', [id], callback)
 }

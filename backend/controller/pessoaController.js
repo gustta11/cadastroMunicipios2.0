@@ -1,10 +1,10 @@
 import {read, create, update, deletePes} from '../model/pessoaModel.js'
 
 export async function createPessoa(req, res){
-    const{nome,idade,cpf,sexo} = req.body
-    console.log('Dados recebidos do frontend:', {nome, idade, cpf, sexo})
+    const{nome,cpf, idade, sexo, bairro, cep} = req.body
+    console.log('Dados recebidos do frontend:', {nome,cpf, idade, sexo, bairro, cep})
 
-    create(nome, idade, cpf, sexo,(err, result) =>{
+    create(nome,cpf, idade, sexo, bairro,cep,(err, result) =>{
         if(err){
            res.status(500).json({error:err.message})
            return
