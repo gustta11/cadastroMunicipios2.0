@@ -3,14 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Formulario from './components/Form'
+import Consulta from './components/Consulta'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div>
 
-      <Formulario/>
+      <Consulta/>
     </div>
   )
 }
