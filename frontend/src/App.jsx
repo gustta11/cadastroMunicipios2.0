@@ -1,18 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Formulario from './components/Form'
 import Consulta from './components/Consulta'
+import Titulo from './layout/Titulo'
+import Footer from './layout/Footer'
+import Botoes from './components/Botoes'
+import{ BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
 
 function App() {
  
 
   return (
-    <div>
 
-      <Consulta/>
+    <Router>
+    <div className='grid-geral'>
+
+      <header>
+        <Titulo/>
+      </header>
+
+      <main>
+        <Botoes/>
+        <Routes>
+        <Route path='/Form' element={<Formulario/>}/>
+        <Route path='/Consulta' element={<Consulta/>}/>
+        </Routes>
+      </main>
+
+      <footer>
+        <Footer/>
+      </footer>
+      
     </div>
+    </Router>
   )
 }
 

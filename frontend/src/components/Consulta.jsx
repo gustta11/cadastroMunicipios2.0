@@ -37,7 +37,7 @@ const Consulta = () =>{
     return(
 
         <div>
-            <button onClick={handleSubmit}></button>
+            <button onClick={handleSubmit}>Consultar</button>
             <ul>
                 {FormValores.map((valor, index) => (
                     <li key={index}>
