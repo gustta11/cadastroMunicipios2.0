@@ -17,8 +17,8 @@ header{
   grid-area: H;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 main{
@@ -27,6 +27,7 @@ main{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(83, 80, 80);
 }
 
 footer{

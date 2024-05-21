@@ -4,7 +4,7 @@ import Formulario from './components/Form'
 import Consulta from './components/Consulta'
 import Titulo from './layout/Titulo'
 import Footer from './layout/Footer'
-import Botoes from './components/Botoes'
+import Nav from './components/Nav'
 import{ BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
 
 function App() {
@@ -16,11 +16,13 @@ function App() {
     <div className='grid-geral'>
 
       <header>
-        <Titulo/>
+      <Titulo/>
+        <Nav/>
+        
       </header>
 
       <main>
-        <Botoes/>
+        
         <Routes>
         <Route path='/Form' element={<Formulario/>}/>
         <Route path='/Consulta' element={<Consulta/>}/>

@@ -1,4 +1,5 @@
 import {useState} from 'react' 
+import './Form.css'
 
 const Formulario =  () =>{
 
@@ -43,18 +44,18 @@ const Formulario =  () =>{
         <form onSubmit={handleSubmit}>
 
         <label> Nome:</label>
-        <input type="text" name='nome' value={formValores.nome} placeholder="Digite aqui" onChange={handleChange}/>
+        <input type="text" name='nome' value={formValores.nome} placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
         <label > CPF:</label>
-        <input type="text" name='cpf'  value={formValores.cpf} placeholder="Digite aqui" onChange={handleChange}/>
+        <input type="text" name='cpf'  value={formValores.cpf} placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
         <label > IDADE:</label>
-        <input type="text" name='idade'  value={formValores.idade} placeholder="Digite aqui" onChange={handleChange}/>
+        <input type="text" name='idade'  value={formValores.idade} placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
         <label > SEXO:</label>
-        <input type="text" name='sexo'  value={formValores.sexo}  placeholder="Digite aqui" onChange={handleChange}/>
+        <input type="text" name='sexo'  value={formValores.sexo}  placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
         <label >BAIRRO:</label>
-        <input type="text" name='bairro'  value={formValores.bairro} placeholder="Digite aqui" onChange={handleChange}/>
+        <input type="text" name='bairro'  value={formValores.bairro} placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
         <label >CEP:</label>
-        <input type="text"  name='cep'  value={formValores.cep} placeholder="Digite aqui" onChange={handleChange}/>
-        <button type="submit">Cadastrar</button>
+        <input type="text"  name='cep'  value={formValores.cep} placeholder="Digite aqui" onChange={handleChange} className='inputs'/>
+        <button type="submit" className='botao'>Cadastrar</button>
 
         </form>
     )
