@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './Consulta.css'
 
 const Consulta = () =>{
 
@@ -36,9 +37,9 @@ const Consulta = () =>{
 
     return(
 
-        <div>
-            <button onClick={handleSubmit}>Consultar</button>
-            <ul>
+        <div className="layout-geral-consulta">
+            <button onClick={handleSubmit}>Consultar</button> 
+           <ul>
                 {FormValores.map((valor, index) => (
                     <li key={index}>
                         {Object.entries(valor).map(([key, val]) => (

@@ -7,6 +7,7 @@ const Nav = () =>{
 
     return(
         <div className='layout-geral-nav'>
+            <Link to='/'><span></span></Link>
             <Link to='/Form'><span>Registrar</span></Link>
             <Link to='/Consulta'><span>Consultar</span></Link>
             <Link to='/Update'><span>Atualizar</span></Link>
