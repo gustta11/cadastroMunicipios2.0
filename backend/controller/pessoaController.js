@@ -25,8 +25,9 @@ export async function getAllPessoas(req, res){
 
 export async function updatePessoa(req,res){
     const{id} = req.params
-    const novosDados = req.body
-    update(id, novosDados, (err, result) =>{
+    console.log('Dados recebidos do front', {id})
+    const {nome,cpf,idade,sexo,bairro,cep} = req.body
+    update(nome,cpf,idade,sexo,bairro,cep,id, (err, result) =>{
         if(err){
             res.status(500).json({error:err.message});
             return

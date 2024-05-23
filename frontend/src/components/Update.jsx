@@ -29,12 +29,13 @@ const Update = () =>{
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify(NovosDados)
+                
             })
 
             const json = await response.json()
             console.log(response)
             console.log(json)
-             
+             return
         }catch (err){
             console.error("Erro ao enviar", err)
         }

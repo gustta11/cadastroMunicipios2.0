@@ -52,4 +52,5 @@ label{
 .botao:hover{
     background-color: yellowgreen;
     border: yellowgreen;
+    cursor: pointer;
 }

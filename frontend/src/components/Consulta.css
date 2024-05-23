@@ -21,3 +21,8 @@ ul{
     flex-direction: row;
     gap: 10px;
 }
+
+.layout-geral-consulta button:hover{
+    background-color: rgba(58, 136, 226, 0.938);
+    border: none;
+}

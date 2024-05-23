@@ -8,8 +8,8 @@ app.use(cors())
 
 app.get('/pessoas', getAllPessoas)
 app.post('/pessoas', createPessoa)
-app.put('/pessoas',updatePessoa)
-app.delete('/pessoas', deletePessoa)
+app.put('/pessoas/:id',updatePessoa)
+app.delete('/pessoas/:id', deletePessoa)
 
 app.listen(3000, ()=>{
     console.log('Servidor rodando na porta 3000')
